@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_marginTop="5dp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="2dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="academicCalendarInfo">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img1"
+                        android:src="@drawable/cal"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentEnd="false"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Academic Calendar"
+                        android:id="@+id/academicCalendar"
+                        android:layout_below="@+id/img1"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerInParent="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="2dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="gotonew">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img2"
+                        android:src="@drawable/compare"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentEnd="false"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Training &amp; Placement"
+                        android:id="@+id/trainingplacement"
+                        android:layout_below="@+id/img2"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerInParent="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="2dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="teqip">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img3"
+                        android:src="@drawable/inf"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentEnd="false"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="TEQIP"
+                        android:id="@+id/teqip"
+                        android:layout_below="@+id/img3"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerInParent="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="2dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="facultiesInfo">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img4"
+                        android:src="@drawable/forum"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentEnd="false"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Faculties"
+                        android:id="@+id/faculties"
+                        android:layout_below="@+id/img4"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerInParent="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="2dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="admissionInfo">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img5"
+                        android:src="@drawable/page"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentEnd="false"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Admissions"
+                        android:id="@+id/admission"
+                        android:layout_below="@+id/img5"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerInParent="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="2dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="nptelInfo">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img6"
+                        android:src="@drawable/info"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentEnd="false"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="NPTEL"
+                        android:id="@+id/nptel"
+                        android:layout_below="@+id/img6"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerInParent="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="2dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="blogInfo">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img7"
+                        android:src="@drawable/blog"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentEnd="false"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Blog"
+                        android:id="@+id/blog"
+                        android:layout_below="@+id/img6"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerInParent="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="2dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="informationBrochure">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img8"
+                        android:src="@drawable/faq4"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentEnd="false"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Information Brochure"
+                        android:id="@+id/ib"
+                        android:layout_below="@+id/img8"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerInParent="true"
+                        android:duplicateParentState="true"
+                        android:layout_gravity="center"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+       <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button2"
+            android:layout_weight="0.10"
+            android:onClick="gotonew"/>-->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="?attr/colorPrimary" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
